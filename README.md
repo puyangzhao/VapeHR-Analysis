@@ -16,11 +16,3 @@ The VapeHR-Analysis project involves several key steps:
 - **Regression and Statistical Analysis**
 - **Visualizations of Heart Rate Patterns**
 
-VapeHR-Analysis/
-│
-├── data_loader.py
-├── matrix_profile.py
-├── annotation_vector.py
-├── correct_matrix_profile.py
-├── motif_detection.py
-└── regression_analysis.py
