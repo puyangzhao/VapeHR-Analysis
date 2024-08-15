@@ -16,3 +16,9 @@ The VapeHR-Analysis project involves several key steps:
 - **Regression and Statistical Analysis**
 - **Visualizations of Heart Rate Patterns**
 
+# SleepAnalysis
+
+## Overview
+
+**SleepAnalysis** is an R-based project that detects sleep sessions from heart rate data and visualizes the results. The project is modularized into several R scripts, each focusing on specific tasks such as data loading, sleep detection, result saving, and plotting.
+
