@@ -4,7 +4,7 @@ library(ggplot2)
 
 plot_sleep_detection <- function(hr_data1, sleep_sessions_df, id, date_range, date_labels) {
   p1 <- ggplot(data = hr_data1, aes(x = dt)) +
-    geom_point(aes(y = hr_imp), color = "grey", size = 3) +
+    geom_point(aes(y = hr), color = "grey", size = 3) +
     geom_line(aes(y = fitted_hr), color = "black", size = 3) +
     labs(title = paste("Participant", id), x = "", y = "Heart Rate") +  
     theme_minimal(base_size = 55) + 
