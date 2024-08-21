@@ -7,12 +7,12 @@ def plot_vaping_frequency(eventdata, filtered_uids):
 
     Args:
         eventdata (DataFrame): DataFrame containing event data.
-        filtered_uids (list): List of user IDs to plot.
+        filtered_ids (list): List of user IDs to plot.
     """
     # Extracting just the date from the timestamp
     eventdata['date'] = eventdata['isoDate'].dt.date
     # Grouping by UID and date and counting the number of events
-    smoking_frequency = eventdata.groupby(['UID', 'date']).size().reset_index(name='smoking_count')
+    smoking_frequency = eventdata.groupby(['ID', 'date']).size().reset_index(name='smoking_count')
 
     # Plot using Matplotlib
     fig, ax = plt.subplots(dpi=301)
