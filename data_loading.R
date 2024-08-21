@@ -6,7 +6,7 @@ library(lubridate)
 load_hr_data <- function(ids, data_path) {
   data_list <- list()
   for (id in ids) {
-    hr_filename <- file.path(data_path, paste0(id, "_imputed_hr.csv"))
+    hr_filename <- file.path(data_path, paste0(id, "data.csv"))
     data_list[[id]] <- read.csv(hr_filename)
   }
   return(data_list)
