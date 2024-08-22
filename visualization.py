@@ -17,7 +17,7 @@ def plot_heart_rate_data(user_hr_data, user_events, filtered_motifs, date, user_
 
     group = user_hr_data[user_hr_data['date'] == date]
 
-    plt.plot(group['dt'], group['hr_imp'], label='Heart Rate', linestyle='-', marker='', alpha=0.5)
+    plt.plot(group['dt'], group['hr'], label='Heart Rate', linestyle='-', marker='', alpha=0.5)
 
     daily_events = user_events[user_events['isoDate'].dt.date == date]
     for idx, event in enumerate(daily_events.itertuples()):
@@ -34,7 +34,7 @@ def plot_heart_rate_data(user_hr_data, user_events, filtered_motifs, date, user_
             color = 'pink' if motif.Period == '2.0' else \
                     'orange' if motif.Period == '1.0' else \
                     'blue'
-            plt.plot(group['dt'].iloc[start_index:end_index+1], group['hr_imp'].iloc[start_index:end_index+1],
+            plt.plot(group['dt'].iloc[start_index:end_index+1], group['hr'].iloc[start_index:end_index+1],
                      color=color, label=f"{motif.Period.capitalize()} Motif" if idx == 0 else "", linewidth=2, zorder=10)
 
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
