@@ -22,18 +22,4 @@ The VapeHR-Analysis project involves several key steps:
 
 This project processes heart rate data for multiple participants, applies trend filtering to identify sleep periods, and saves the results for further analysis.
 
-## Project Structure
 
-## Setup
-
-1. Clone the repository.
-2. Place your data files in the `data/` directory.
-3. Open and run the scripts in the `scripts/` folder in the specified order.
-
-## Scripts
-
-1. `00_load_libraries.R`: Loads all necessary R libraries.
-2. `01_define_parameters.R`: Defines parameters and constants used across scripts.
-3. `02_load_data.R`: Loads the data into R.
-4. `03_process_data.R`: Processes the data, applies trend filtering, and identifies sleep periods.
-5. `04_save_results.R`: Saves the processed data to CSV files.
