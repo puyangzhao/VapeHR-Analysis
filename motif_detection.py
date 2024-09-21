@@ -3,7 +3,6 @@ import pandas as pd
 
 def find_motifs_per_user(user_data, percentile=90):
     """
-    Identify the smallest 90% of corrected_matrix_profile values for each user, by date and AVS value.
 
     Args:
         user_data (DataFrame): DataFrame containing user data with corrected matrix profiles.
