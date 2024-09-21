@@ -19,8 +19,8 @@ def plot_vaping_frequency(eventdata, filtered_uids):
 
     for user in filtered_uids:
         user_data = smoking_frequency[smoking_frequency['UID'] == user]
-        ax.bar(user_data['smoking_count'].value_counts().index,
-               user_data['smoking_count'].value_counts().values, label=user)
+        ax.bar(user_data['vaping_count'].value_counts().index,
+               user_data['vaping_count'].value_counts().values, label=user)
 
     ax.set_xlabel("Vaping Count")
     ax.set_ylabel("Frequency")
