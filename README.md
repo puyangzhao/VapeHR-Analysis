@@ -24,10 +24,6 @@ This project processes heart rate data for multiple participants, applies trend 
 
 ## Project Structure
 
-- `scripts/`: Contains all R scripts organized by functionality.
-- `data/`: Directory to store input data files.
-- `results/csv/`: Directory where the processed CSV files will be saved.
-
 ## Setup
 
 1. Clone the repository.
