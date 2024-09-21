@@ -70,13 +70,13 @@ def plot_regression_results(regression_df):
     Args:
         regression_df (DataFrame): DataFrame containing regression results.
     """
-    good_fit_df = regression_df[regression_df['r_squared'] > 0.8]
+    good_fit_df = regression_df[regression_df['r_squared'] > 0.9]
     average_r_squared_good = good_fit_df.groupby('user_id')['r_squared'].mean().reset_index()
 
     plt.figure(figsize=(12, 8), dpi=301)
     barplot = sns.barplot(x='user_id', y='r_squared', data=average_r_squared_good)
     barplot.set_xticklabels(barplot.get_xticklabels(), rotation=45)
-    plt.title('High R² Values by User (R² > 0.8)')
+    plt.title('High R² Values by User (R² > 0.9)')
     plt.xlabel('User ID')
     plt.ylabel('Average R²')
     plt.show()
